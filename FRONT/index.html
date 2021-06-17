@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Crud API</title>
+</head>
+<body>
+    <div class="content">
+        <div class="form">
+                <input type="text" name="name" id="name" placeholder="Cruzeiro Esporte...">
+                <input type="text" name="foundation" id="foundation" class="foundation" maxlength="10" placeholder="22/03/2013">
+                <input type="number" name="achievements" id="achievements" class="achievements" value="1" min="0">
+                <button class="btn-save" title="Save"><i class="fas fa-save"></i></button>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Data de fundação</th>
+                        <th>Quantidade de títulos</th>
+                        <th>Opção</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Cruzeiro Esporte Clube</td>
+                        <td>02/01/1920</td>
+                        <td>78</td>
+                        <td>
+                            <button class="btn-edit" title="Edit">
+                                <i class="fas fa-edit" aria-hidden="true"></i>
+                            </button>
+                            <button class="btn-delete" title="Delete">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </div>
+    <script src="js/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
